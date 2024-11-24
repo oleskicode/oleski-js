@@ -1,21 +1,11 @@
 document.getElementById("showImage").addEventListener("click", function() {
-    const image = document.getElementById("imageShowHide");
-    image.style.display = "block";
-
-    const buttonShow = document.getElementById("showImage");
-    buttonShow.disabled = true;
-
-    const buttonHide = document.getElementById("hideImage");
-    buttonHide.disabled = false;
+    document.getElementById("imageShowHide").style.display = "block";
+    document.getElementById("showImage").disabled = true;
+    document.getElementById("hideImage").disabled = false;
 })
 
 document.getElementById("hideImage").addEventListener("click", function() {
-    const image = document.getElementById("imageShowHide");
-    image.style.display = "none";
-
-    const buttonShow = document.getElementById("showImage");
-    buttonShow.disabled = false;
-
-    const buttonHide = document.getElementById("hideImage");
-    buttonHide.disabled = true;
+    document.getElementById("imageShowHide").style.display = "none";
+    document.getElementById("showImage").disabled = false;
+    document.getElementById("hideImage").disabled = true;
 })
