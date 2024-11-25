@@ -1,11 +1,15 @@
+const showImageButton = document.getElementById("showImage");
+const hideImageButton = document.getElementById("hideImage");
+const imageShowHide = document.getElementById("imageShowHide");
+
 document.getElementById("showImage").addEventListener("click", function() {
-    document.getElementById("imageShowHide").style.display = "block";
-    document.getElementById("showImage").disabled = true;
-    document.getElementById("hideImage").disabled = false;
+    imageShowHide.style.display = "block";
+    showImageButton.disabled = true;
+    hideImageButton.disabled = false;
 })
 
 document.getElementById("hideImage").addEventListener("click", function() {
-    document.getElementById("imageShowHide").style.display = "none";
-    document.getElementById("showImage").disabled = false;
-    document.getElementById("hideImage").disabled = true;
+    imageShowHide.style.display = "none";
+    showImageButton.disabled = false;
+    hideImageButton.disabled = true;
 })
