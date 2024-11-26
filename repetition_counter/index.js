@@ -1,13 +1,13 @@
 function countNumberAppearance() {
     numbersString = document.getElementById("numbersInput").value;
-    console.log(numbersString)
     numbersArray = String(numbersString).split(" ")
     valueToCount = document.getElementById("valueToCount").value;
-    let counter = 0
+    console.log(numbersString)
     console.log("Input array: " + numbersArray)
     console.log("Looking for number:" + valueToCount)
-    for (let i = 0; i < numbersArray.length; i++) {
-        if (numbersArray[i] == valueToCount) {
+    let counter = 0
+    for (let item of numbersArray){
+        if (item == valueToCount) {
             counter++;
         }
     }
