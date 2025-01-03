@@ -12,8 +12,8 @@ function arrayToSquareUsingFor(inputArray) {
     }
 }
 
-array1 = [1,2,3]
-console.log(array1)
+const array1 = [1,2,3]
+console.log("array1 " + array1)
 
 arrayToSquare(array1)
 console.log(array1)

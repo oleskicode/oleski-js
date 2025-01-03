@@ -1,7 +1,7 @@
 function countNumberAppearance() {
-    numbersString = document.getElementById("numbersInput").value;
-    numbersArray = String(numbersString).split(" ")
-    valueToCount = document.getElementById("valueToCount").value;
+    const numbersString = document.getElementById("numbersInput").value;
+    const numbersArray = String(numbersString).split(" ")
+    const valueToCount = document.getElementById("valueToCount").value;
     console.log(numbersString)
     console.log("Input array: " + numbersArray)
     console.log("Looking for number:" + valueToCount)

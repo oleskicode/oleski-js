@@ -1,8 +1,8 @@
-wordToCheck1 = "123321"
-wordToCheck2 = "abcdcba"
-wordToCheck3 = "0"
-wordToCheck4 = "123123"
-wordToCheck5 = "abcab"
+const wordToCheck1 = "123321"
+const wordToCheck2 = "abcdcba"
+const wordToCheck3 = "0"
+const wordToCheck4 = "123123"
+const wordToCheck5 = "abcab"
 
 function isPalindrome(inputWord) {
     const revertedInputWord = inputWord.split('').reverse().join('')
