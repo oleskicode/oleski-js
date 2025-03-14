@@ -1,4 +1,4 @@
-// 1. Function to check whether input is Array
+// Function to check whether input is Array
 function isArray(input) {
     // console.log(Array.isArray(input))
     if (Array.isArray(input) === true) {

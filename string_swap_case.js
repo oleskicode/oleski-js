@@ -5,7 +5,7 @@
 // Input: "Hello World!"" // Output: "hEL*O W*RLD*"
 
 function reverseCase(str) {
-    let inputList = str.split("")
+    const inputList = str.split("")
     let outputString1 = ""
     inputList.forEach(item => {
         if (item === item.toUpperCase()) {

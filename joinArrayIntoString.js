@@ -1,5 +1,5 @@
 // Join Array into string using join character
-myColor = ["Red", "Green", "White", "Black"];  
+const myColor = ["Red", "Green", "White", "Black"];  
 // "Red,Green,White,Black"  
 // "Red+Green+White+Black"    
 
@@ -7,7 +7,7 @@ function joinArrayItems(array, joinChar) {
     if (joinChar == "undefined") {
         joinChar = " "
     }
-    result = array.join(joinChar)
+    const result = array.join(joinChar)
     return result
 }
 

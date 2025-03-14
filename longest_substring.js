@@ -7,13 +7,13 @@ Output: The answer is "abc", with the length of 3.
 Input: s2 = "bbbbb"
 Output: The answer is "b", with the length of 1. */
 
-s1 = "abcabcbb"
-s2 = "bbbbb"
-s3 = "1234123451234"
+const s1 = "abcabcbb"
+const s2 = "bbbbb"
+const s3 = "1234123451234"
 
 function findLongestSubstring(str) {
     console.log("Input: " + str)
-    arrayStr = str.split("")
+    const arrayStr = str.split("")
     console.log(arrayStr)
     let biggestSubstring = ""
     let currentSubstring = ""

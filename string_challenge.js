@@ -6,12 +6,12 @@
 // Your ChallengeToken: myr8iskabe
 // Final Output: 1a2_3cm_r8i_kab_
 
-let challengeToken = "myr8iskabe"
+const challengeToken = "myr8iskabe"
 
 function stringChallenge(inputString) {
     let combinedString = ""
-    let input1 = inputString.split("*")[0]
-    let input2 = inputString.split("*")[1]
+    const input1 = inputString.split("*")[0]
+    const input2 = inputString.split("*")[1]
 
     // pairing up characters
     for (let i = 0; i < input1.length; i++) {

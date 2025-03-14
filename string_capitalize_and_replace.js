@@ -1,4 +1,4 @@
-// - Function which takes the str parameter and
+// Function which takes the str parameter and
 // 1. capitalizes the first letter in each word
 // 2. masks every fourth symbol by replacing it with another symbol
 // Input: "hello world" >> Output: "Hel_o W_rld"

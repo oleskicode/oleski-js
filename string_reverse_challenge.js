@@ -8,9 +8,10 @@
 // Output: edoC evol I
 // Final Output: edo_ ev_L I_yr8_ska_e
 
-let challengeToken = "myr8iskabe"
+const challengeToken = "myr8iskabe"
+
 function reverseStringChallenge(inputString) {
-    reversedString = inputString.split("").reverse().join("") // S R J to reverse string
+    let reversedString = inputString.split("").reverse().join("") // S R J to reverse string
     // console.log(reversedString)
 
     reversedString += challengeToken

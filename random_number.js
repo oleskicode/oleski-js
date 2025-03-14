@@ -1,7 +1,7 @@
 let randomNum = Math.random()
 console.log(randomNum)
 
-let range = 5 // this sets [1...range]
+const range = 5 // this sets [1...range]
 randomNum = Math.floor(Math.random() * range) + 1
 console.log("Random value from range [1,5]: " + randomNum)
 

@@ -1,4 +1,4 @@
-// // Task 1
+// Task 1
 function isEven(inputNumber) {
     console.log(inputNumber);
     return inputNumber % 2 === 0;
@@ -7,7 +7,7 @@ console.log(isEven(1));
 console.log(isEven(2));
 console.log(isEven(3));
 
-// // Task 2
+// Task 2
 function hourCheck(hourInput) {
     if (hourInput < 12)
         return "Good Morning!";
@@ -20,7 +20,7 @@ console.log(hourCheck(1));
 console.log(hourCheck(12));
 console.log(hourCheck(18));
 
-// // Task 3 - Age check
+// Task 3 - Age check
 function ageCheck(inputAge) {
     return inputAge >= 18;
 }
