@@ -7,8 +7,8 @@ const rollResult = document.getElementById("rollResult");
 let randomNum;
 
 rollButton.onclick = function () {
-    console.log("Roll button is clicked");
-    randomNum = Math.floor(Math.random() * MAX_DICE) + MIN_DICE;
-    console.log(randomNum);
-    rollResult.textContent = randomNum;
-}
+  console.log("Roll button is clicked");
+  randomNum = Math.floor(Math.random() * MAX_DICE) + MIN_DICE;
+  console.log(randomNum);
+  rollResult.textContent = randomNum;
+};

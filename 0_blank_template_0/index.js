@@ -1,1 +1,1 @@
-console.log("Template OK")
+console.log("Template OK");
