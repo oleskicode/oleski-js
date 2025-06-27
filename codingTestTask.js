@@ -32,36 +32,36 @@ Output Example:
 */
 
 const testCases = [
-    { id: 1, description: "Login with valid credentials", status: "passed" },
-    { id: 2, description: "Login with invalid credentials", status: "failed" },
-    { id: 3, description: "Forgot password flow", status: "skipped" },
-    { id: 4, description: "Update profile", status: "passed" },
-    { id: 5, description: "Delete account", status: "failed" },
+  { id: 1, description: "Login with valid credentials", status: "passed" },
+  { id: 2, description: "Login with invalid credentials", status: "failed" },
+  { id: 3, description: "Forgot password flow", status: "skipped" },
+  { id: 4, description: "Update profile", status: "passed" },
+  { id: 5, description: "Delete account", status: "failed" },
 ];
 
 const outputResult = {
-    passed: { count: 0, descriptions: [] },
-    failed: { count: 0, descriptions: [] },
-    skipped: { count: 0, descriptions: [] }
+  passed: { count: 0, descriptions: [] },
+  failed: { count: 0, descriptions: [] },
+  skipped: { count: 0, descriptions: [] },
 };
 
 function summarizeResults(testCases) {
-    for (let i = 0; i < testCases.length; i++) {
-        if (testCases[i].status === "passed") {
-            outputResult.passed.descriptions.push(testCases[i].description)
-            outputResult.passed.count++
-        }
-        if (testCases[i].status === "failed") {
-            outputResult.failed.descriptions.push(testCases[i].description)
-            outputResult.failed.count++
-        }
-        if (testCases[i].status === "skipped") {
-            outputResult.skipped.descriptions.push(testCases[i].description)
-            outputResult.skipped.count++
-        }
+  for (let i = 0; i < testCases.length; i++) {
+    if (testCases[i].status === "passed") {
+      outputResult.passed.descriptions.push(testCases[i].description);
+      outputResult.passed.count++;
     }
+    if (testCases[i].status === "failed") {
+      outputResult.failed.descriptions.push(testCases[i].description);
+      outputResult.failed.count++;
+    }
+    if (testCases[i].status === "skipped") {
+      outputResult.skipped.descriptions.push(testCases[i].description);
+      outputResult.skipped.count++;
+    }
+  }
 }
 
-summarizeResults(testCases)
+summarizeResults(testCases);
 
-console.log(JSON.stringify(outputResult))
+console.log(JSON.stringify(outputResult));

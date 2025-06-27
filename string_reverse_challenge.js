@@ -1,4 +1,4 @@
-// Return the input string in reversed order. 
+// Return the input string in reversed order.
 // Once your function is working, take the final output string and concatenate it with your ChallengeToken, and then replace every fourth character with an underscore.
 // Your ChallengeToken: myr8iskabe
 // Example 1. Input: "coderbyte"
@@ -8,29 +8,29 @@
 // Output: edoC evol I
 // Final Output: edo_ ev_L I_yr8_ska_e
 
-const challengeToken = "myr8iskabe"
+const challengeToken = "myr8iskabe";
 
 function reverseStringChallenge(inputString) {
-    let reversedString = inputString.split("").reverse().join("") // S R J to reverse string
-    // console.log(reversedString)
+  let reversedString = inputString.split("").reverse().join(""); // S R J to reverse string
+  // console.log(reversedString)
 
-    reversedString += challengeToken
-    // console.log(reversedString)
+  reversedString += challengeToken;
+  // console.log(reversedString)
 
-    // replace every fourth character with an underscore
-    let counter = 1
-    let finalString = ""
-    reversedString.split("").forEach(element => {
-        if (counter % 4 === 0) {
-            finalString += "_"
-        } else {
-            finalString += element
-        }
-        counter++
-    });
+  // replace every fourth character with an underscore
+  let counter = 1;
+  let finalString = "";
+  reversedString.split("").forEach((element) => {
+    if (counter % 4 === 0) {
+      finalString += "_";
+    } else {
+      finalString += element;
+    }
+    counter++;
+  });
 
-    return finalString
+  return finalString;
 }
 
-console.log(reverseStringChallenge("coderbyte"))
-console.log(reverseStringChallenge("I Love Code"))
+console.log(reverseStringChallenge("coderbyte"));
+console.log(reverseStringChallenge("I Love Code"));
